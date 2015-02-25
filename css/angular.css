@@ -1,0 +1,14 @@
+.ng-hide:not(.ng-hide-animate) {
+  display: block!important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+table th a {
+    cursor: pointer;
+}
+
+table th {
+    width: 200px !important;
+}
