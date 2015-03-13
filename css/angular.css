@@ -1,8 +1,8 @@
 .ng-hide:not(.ng-hide-animate) {
-  display: block!important;
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
+    display: block!important;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
 }
 
 table th a {
@@ -11,4 +11,13 @@ table th a {
 
 table th {
     width: 200px !important;
+}
+
+.modalShow {
+    display: block !important;
+}
+
+h4.inlineHeader{
+    display: inline-block;
+    vertical-align: baseline;
 }

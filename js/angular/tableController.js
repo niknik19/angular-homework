@@ -36,6 +36,27 @@ angular.module('app').controller('tableController', ['$scope',  function($scope)
     
     $scope.currentContactOption = $scope.contactOptions[0];
     
+    //Dialog 
+    
+    $scope.showPersonInfo = function(person) {
+        $scope.selectedPerson = person;
+        $scope.isShowDisplayInfo = true;
+    };
+    
+    $scope.getSelectedPersonHeader = function() {
+        if ($scope.selectedPerson) {
+            return $scope.selectedPerson.firstName + " " + $scope.selectedPerson.lastName;
+        }
+    };
+    
+    $scope.onModalOk = function() {
+        alert("Ok");
+    };
+    
+    $scope.onModalCancel = function() {
+        alert("Cancel");
+    };
+    
     $scope.persons = [
         {
             "firstName": "John",
